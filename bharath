@@ -1,0 +1,279 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN8SjFull/PnBTXZ1KAF8Ux",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Bharathv2005/Python-/blob/main/bharath\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NzTwPgrsduGB",
+        "outputId": "242594bf-2274-4c93-9680-39dc990d47c1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the value of a and b\n",
+            "10\n",
+            "5\n",
+            "a is the largest number\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"enter the value of a and b\")\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "if a>b:\n",
+        "  print(\"a is the largest number\")\n",
+        "else:\n",
+        "  print(\"b is the largest number\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def check_odd_even(number):\n",
+        "  if number % 2 ==0:\n",
+        "    print(f\"(number) is even .\")\n",
+        "  else:\n",
+        "      print(f\"(number) is odd\")\n",
+        "num = int(input(\"enter a number: \"))\n",
+        "check_odd_even(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KCdc6V7TgvCg",
+        "outputId": "86e98971-c2a6-4120-a9a9-01c7454ea075"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number: 7\n",
+            "(number) is odd\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def check_leap_year(year):\n",
+        "  if (year % 4 == 0 and year % 100 != 0 ) or (year % 400 == 0):\n",
+        "    return f\"{year} is a leap year .\"\n",
+        "  else:\n",
+        "      return f\"{year} is not a leap year .\"\n",
+        "year = int(input(\"enter a year: \"))\n",
+        "print(check_leap_year(year))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HMdgN62YjtZY",
+        "outputId": "e4701922-56eb-49fc-d808-fb69f82be141"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a year: 2023\n",
+            "2023 is not a leap year .\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum_of_digits(number):\n",
+        "    total=0\n",
+        "    while number > 0:\n",
+        "       total += number % 10\n",
+        "       number //=10\n",
+        "       return total\n",
+        "num = int(input(\"enter a number: \"))\n",
+        "print(f\"the sum of digits is:{sum_of_digits (num)}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dya6AV9-nH2v",
+        "outputId": "01d20c3e-c37f-4ace-fbfb-23212126ec8e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number: 2005\n",
+            "the sum of digits is:5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def factorial(n):\n",
+        "  result = 1\n",
+        "  for i in range(1, n+1):\n",
+        "    result *= i\n",
+        "  return result\n",
+        "num=int(input(\"enter a number: \"))\n",
+        "print(f\"the factorial of {num} is {factorial(num)}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DYswdSUrrldX",
+        "outputId": "79d1713c-50cb-413d-fdfb-f62db4086425"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number: 3\n",
+            "the factorial of 3 is 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wdtsUCu1J9iX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add(x,y):\n",
+        "  return x+y\n",
+        "def subract(x,y):\n",
+        "  return x-y\n",
+        "def multiply(x,y):\n",
+        "  return x*y\n",
+        "def divide(x,y):\n",
+        "  if y != 0:\n",
+        "    return x/y\n",
+        "  else:\n",
+        "    return \"error! division by zero.\"\n",
+        "print(\"select operation: \")\n",
+        "print(\"1.add\")\n",
+        "print(\"2.subract\")\n",
+        "print(\"3.multiply\")\n",
+        "print(\"4.divide\")\n",
+        "choice = input(\"enter choice (1/2/3/4): \")\n",
+        "num1 = float(input (\"enter first number:\"))\n",
+        "num2 = float(input(\"enter second number: \"))\n",
+        "if choice == '1':\n",
+        "  print(f\"the resultis is : {add(num1,num2)}\")\n",
+        "elif choice == '2':\n",
+        "  print(f\"the resultis is : {subract(num1,num2)}\")\n",
+        "elif choice == '3':\n",
+        "  print(f\"the resultis is : {multiply(num1,num2)}\")\n",
+        "elif choice == '4':\n",
+        "  print(f\"the resultis is : {divide(num1,num2)}\")\n",
+        "else:\n",
+        "  print(\"invalid input\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DCmJ8bS87eE8",
+        "outputId": "8573d04b-5b1d-4be1-be36-8607dd85aa20"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "select operation: \n",
+            "1.add\n",
+            "2.subract\n",
+            "3.multiply\n",
+            "4.divide\n",
+            "enter choice (1/2/3/4): 4\n",
+            "enter first number:4\n",
+            "enter second number: 0\n",
+            "the resultis is : error! division by zero.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b,c = 2,5,6\n",
+        "print(\"largest\")"
+      ],
+      "metadata": {
+        "id": "6ENPPsRcGt77"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "wpNynrZxKAR6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wPWKyXrUJ_NU"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
